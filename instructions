@@ -1,0 +1,18 @@
+Hello everyone, This is a project made by lerning from IIEC
+
+I have created a docker compose file for configuration , installation and starting up jenkins
+Jenkins is a DevOps tool that is an open source automation server which enables developers around the world to reliably build, test, and deploy their software.
+It is a Web UI Application.
+I have also linked the Jenkins Image with MySQL Database Server to create a persistent storage. Creating persistant storage is avery good option.
+But before using Jenkins, we require to configure it.
+
+How to use:
+1) Use Docker Pull Jenkins and MySQL to get the images from Docker Hub
+2) Run the 'docker-compose up' command
+3) This process will start configuration of Jenkins. After approx 2 minutes, Jenkins gets configured and installed.
+
+Such kind of complex concepts were made very easy by Mr. Vimal Daga.
+I am very thankfull to Mr. Vimal Daga and his team for initiating IIEC_RISE for free and teaching such in such a great way and providing 10x more content than anybody else.
+I would also like to thank my college VIIT for sharing such an initiative.
+
+Thank You
