@@ -1,0 +1,51 @@
+version: '2'
+services:
+        db_os:
+                image: mysql:5.7
+                volumes:
+                        - sqldatabase_storage:/var/lib/mysql
+                restart: always
+                environment:
+                        MYSQL_ROOT_PASSWORD: great
+                        MYSQL_USER: rajnish
+                        MYSQL_PASSWORD: thegreat
+                        MYSQL_DATABASE: jenkins_db
+
+
+
+   
+        jenkins_os:
+                
+                image: jenkins
+                restart: always
+                depends_on:
+                        
+                        - db_os
+                ports:
+                        - 8081:8080
+                        - 50000:50000
+                environment:
+                        JENKINS_SLAVE_AGENT_PORT: 50001
+
+                volumes:
+                        - jenkins_storage:/var/jenkins_home
+
+volumes:
+        
+        sqldatabase_storage:
+        jenkins_storage:
+
+             
+
+
+
+
+
+
+
+
+
+
+
+
+
